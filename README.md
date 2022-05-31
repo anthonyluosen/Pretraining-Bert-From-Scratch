@@ -1,2 +1,3 @@
 # Pretraining-Train-Bert-From-Scratch
-### code from nvidia:https://github.com/NVIDIA/DeepLearningExamples
+### change it to neat code
+### Code From nvidia:https://github.com/NVIDIA/DeepLearningExamples

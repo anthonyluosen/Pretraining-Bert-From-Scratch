@@ -1,0 +1,16 @@
+Phase 1: (Maximum sequence length of 128)
+
+Runs on 8 GPUs with a training batch size of 64 per GPU
+Uses a learning rate of 6e-3
+Has FP16 precision enabled
+Runs for 7038 steps, where the first 28.43% (2000) are warm-up steps
+Saves a checkpoint every 200 iterations (keeps only the latest three checkpoints) and at the end of training. All checkpoints and training logs are saved to the /results directory (in the container which can be mounted to a local directory).
+Creates a log file containing all the output
+
+Phase 2: (Maximum sequence length of 512)
+Runs on 8 GPUs with a training batch size of 8 per GPU
+Uses a learning rate of 4e-3
+Has FP16 precision enabled
+Runs for 1563 steps, where the first 12.8% are warm-up steps
+Saves a checkpoint every 200 iterations (keeps only the latest three checkpoints) and at the end of training. All checkpoints and training logs are saved to the /results directory (in the container which can be mounted to a local directory).
+Creates a log file containing all the output
